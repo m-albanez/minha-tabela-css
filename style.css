@@ -21,6 +21,11 @@ th {
     letter-spacing: 1px;
 }
 
+/* Ocultar o tooltip ao passar o mouse sobre os cabeçalhos da tabela */
+th:hover::after {
+    content: none !important;
+}
+
 /* Estilo das células da tabela */
 th, td {
     padding: 14px 20px;
