@@ -36,7 +36,6 @@ td {
     transition: background-color 0.3s ease; /* Transição suave */
 }
 
-
 /* Estilo para o rodapé da tabela */
 tfoot td {
     font-weight: bold;
@@ -58,4 +57,22 @@ th:first-child, td:first-child {
 /* Estilo de destaque nas células ao passar o mouse */
 td.highlight:hover {
     background-color: #fffcf2; /* Destaque suave */
+}
+
+/* Estilo específico para o texto com a imagem da Finclass */
+.finclass-logo {
+    display: flex;
+    align-items: center;
+}
+
+.finclass-logo img {
+    margin-right: 8px;  /* Espaço entre a imagem e o texto */
+    height: 20px;
+    width: 20px;
+}
+
+/* Estilo para o texto sem a imagem */
+.default-logo {
+    color: grey;
+    font-style: italic;
 }
