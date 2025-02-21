@@ -17,7 +17,7 @@ th {
     color: #ffffff; /* Texto branco */
     font-size: 16px;
     font-weight: 600;
-    text-transform: uppercase; /* Letra maiúscula */
+    text-transform: capitalize; /* Primeira letra de cada palavra em maiúscula */
     letter-spacing: 1px;
 }
 
