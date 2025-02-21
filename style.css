@@ -13,7 +13,7 @@ table {
 th {
     padding: 16px 20px;
     text-align: left;
-    background-color: #007BFF; /* Fundo azul moderno */
+    background-color: #000000; /* Fundo preto */
     color: #ffffff; /* Texto branco */
     font-size: 16px;
     font-weight: 600;
@@ -53,9 +53,10 @@ tfoot td {
     border-top: 2px solid #e0e0e0;
 }
 
-/* Estilo de bordas nas células */
+/* Remover as bordas verticais (borda esquerda e direita) */
 th, td {
-    border-left: 1px solid #e0e0e0;
+    border-left: none;
+    border-right: none;
 }
 
 /* Remover a borda esquerda da primeira célula */
