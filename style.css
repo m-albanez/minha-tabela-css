@@ -64,26 +64,6 @@ td.highlight:hover {
     background-color: #fffcf2; /* Destaque suave */
 }
 
-/* Estilo específico para o texto com a imagem da Finclass */
-.finclass-logo {
-    display: flex;
-    align-items: center;
-}
 
-/* Tornando o seletor mais específico */
-table .finclass-logo {
-    display: flex;
-    align-items: center;
-}
 
-table .finclass-logo img {
-    margin-right: 8px;
-    height: 20px;
-    width: 20px;
-}
 
-/* Estilo para o texto sem a imagem */
-.default-logo {
-    color: grey;
-    font-style: italic;
-}
