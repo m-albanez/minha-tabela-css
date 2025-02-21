@@ -1,0 +1,69 @@
+/* Estilo geral da tabela */
+table {
+    width: 100%;
+    border-radius: 8px; /* Bordas arredondadas */
+    border-collapse: separate; /* Separando as bordas das células */
+    border-spacing: 0;
+    background-color: #ffffff; /* Fundo branco */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra suave */
+    font-family: 'Roboto', sans-serif;
+}
+
+/* Estilo do cabeçalho da tabela */
+th {
+    padding: 16px 20px;
+    text-align: left;
+    background-color: #007BFF; /* Fundo azul moderno */
+    color: #ffffff; /* Texto branco */
+    font-size: 16px;
+    font-weight: 600;
+    text-transform: uppercase; /* Letra maiúscula */
+    letter-spacing: 1px;
+}
+
+/* Estilo das células da tabela */
+th, td {
+    padding: 14px 20px;
+    text-align: left;
+    font-size: 14px;
+}
+
+/* Estilo das linhas de dados */
+td {
+    background-color: #f9f9f9; /* Fundo claro para as células */
+    color: #333333; /* Texto escuro */
+    border-bottom: 1px solid #e0e0e0; /* Linha sutil entre as células */
+    transition: background-color 0.3s ease; /* Transição suave */
+}
+
+/* Estilo das linhas alternadas */
+tr:nth-child(even) td {
+    background-color: #f4f7fb; /* Fundo alternado muito suave */
+}
+
+/* Estilo das linhas ao passar o mouse */
+tr:hover td {
+    background-color: #f1faff; /* Cor suave quando o mouse passa por cima */
+}
+
+/* Estilo para o rodapé da tabela */
+tfoot td {
+    font-weight: bold;
+    background-color: #f0f0f0;
+    border-top: 2px solid #e0e0e0;
+}
+
+/* Estilo de bordas nas células */
+th, td {
+    border-left: 1px solid #e0e0e0;
+}
+
+/* Remover a borda esquerda da primeira célula */
+th:first-child, td:first-child {
+    border-left: none;
+}
+
+/* Estilo de destaque nas células ao passar o mouse */
+td.highlight:hover {
+    background-color: #fffcf2; /* Destaque suave */
+}
