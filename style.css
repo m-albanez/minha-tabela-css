@@ -36,15 +36,6 @@ td {
     transition: background-color 0.3s ease; /* Transição suave */
 }
 
-/* Estilo das linhas alternadas */
-tr:nth-child(even) td {
-    background-color: #f4f7fb; /* Fundo alternado muito suave */
-}
-
-/* Estilo das linhas ao passar o mouse */
-tr:hover td {
-    background-color: #f1faff; /* Cor suave quando o mouse passa por cima */
-}
 
 /* Estilo para o rodapé da tabela */
 tfoot td {
