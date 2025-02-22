@@ -19,6 +19,7 @@ th {
     font-weight: 600;
     text-transform: capitalize; /* Primeira letra de cada palavra em maiúscula */
     letter-spacing: 1px;
+    background-image: url("https://www.grupo-primo.com/images/Frame-30.png");
 }
 
 /* Ocultar o tooltip ao passar o mouse sobre os cabeçalhos da tabela */
