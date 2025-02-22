@@ -65,7 +65,7 @@ td.highlight:hover {
     background-color: #1d1d1d; /* Destaque suave */
 }
 
-.teste{
-    background-image: url("https://www.grupo-primo.com/images/Frame-30.png");
-    padding: 30px;
+.bu-image {
+    text-indent: -9999px;
+    display: block;
 }
