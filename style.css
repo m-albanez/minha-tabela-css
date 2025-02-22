@@ -4,5 +4,62 @@ table {
     border-radius: 8px; /* Bordas arredondadas */
     border-collapse: separate; /* Separando as bordas das células */
     border-spacing: 0;
-    background-color: #1d1d1d;
+    background-color: #1d1d1d; /* Fundo branco */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra suave */
+    font-family: 'Roboto', sans-serif;
+}
+
+/* Estilo do cabeçalho da tabela */
+th {
+    padding: 16px 20px;
+    text-align: left;
+    background-color: #1d1d1d; /* Fundo preto */
+    color: #1d1d1d; 
+    font-size: 16px;
+    font-weight: 600;
+    text-transform: capitalize; /* Primeira letra de cada palavra em maiúscula */
+    letter-spacing: 1px;
+}
+
+/* Ocultar o tooltip ao passar o mouse sobre os cabeçalhos da tabela */
+th:hover::after {
+    content: none !important;
+}
+
+/* Estilo das células da tabela */
+th, td {
+    padding: 14px 20px;
+    text-align: left;
+    font-size: 14px;
+}
+
+/* Estilo das linhas de dados */
+td {
+    background-color: #f9f9f9; /* Fundo claro para as células */
+    color: #ffffff; /* Texto escuro */
+    border-bottom: 1px solid #e0e0e0; /* Linha sutil entre as células */
+    transition: background-color 0.3s ease; /* Transição suave */
+}
+
+/* Estilo para o rodapé da tabela */
+tfoot td {
+    font-weight: bold;
+    background-color: #f0f0f0;
+    border-top: 2px solid #e0e0e0;
+}
+
+/* Remover as bordas verticais (borda esquerda e direita) */
+th, td {
+    border-left: none;
+    border-right: none;
+}
+
+/* Remover a borda esquerda da primeira célula */
+th:first-child, td:first-child {
+    border-left: none;
+}
+
+/* Estilo de destaque nas células ao passar o mouse */
+td.highlight:hover {
+    background-color: #fffcf2; /* Destaque suave */
 }
