@@ -35,7 +35,7 @@ th, td {
 
 /* Estilo das linhas de dados */
 td {
-    background-color: #f9f9f9; /* Fundo claro para as células */
+    background-color: #1d1d1d; /* Fundo claro para as células */
     color: #ffffff; /* Texto escuro */
     border-bottom: 1px solid #e0e0e0; /* Linha sutil entre as células */
     transition: background-color 0.3s ease; /* Transição suave */
@@ -44,7 +44,7 @@ td {
 /* Estilo para o rodapé da tabela */
 tfoot td {
     font-weight: bold;
-    background-color: #f0f0f0;
+    background-color: #1d1d1d;
     border-top: 2px solid #e0e0e0;
 }
 
@@ -61,5 +61,5 @@ th:first-child, td:first-child {
 
 /* Estilo de destaque nas células ao passar o mouse */
 td.highlight:hover {
-    background-color: #fffcf2; /* Destaque suave */
+    background-color: #1d1d1d; /* Destaque suave */
 }
