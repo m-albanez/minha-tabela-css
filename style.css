@@ -37,7 +37,7 @@ th, td {
 td {
     background-color: #1d1d1d; /* Fundo claro para as células */
     color: #ffffff; /* Texto escuro */
-    border-bottom: 1px solid #e0e0e0; /* Linha sutil entre as células */
+    border-bottom: none; /* Linha sutil entre as células */
     transition: background-color 0.3s ease; /* Transição suave */
 }
 
