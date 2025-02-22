@@ -65,14 +65,10 @@ td.highlight:hover {
     background-color: #1d1d1d; /* Destaque suave */
 }
 
-table tbody td .bu-image {
-    display: flex !important;
-    justify-content: center !important;
-    align-items: center !important;
-}
-
-table tbody td .bu-image img {
-    max-width: 60px !important;
-    height: auto !important;
-    display: block !important;
+td:contains("Finclass") {
+    background-image: url("https://www.grupo-primo.com/images/Frame-30.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    color: transparent; /* Esconde o texto */
 }
