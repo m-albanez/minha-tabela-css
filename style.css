@@ -65,10 +65,28 @@ td.highlight:hover {
     background-color: #1d1d1d; /* Destaque suave */
 }
 
-td:contains("Finclass") {
-    background-image: url("https://www.grupo-primo.com/images/Frame-30.png");
+.bu-image {
+    display: inline-block;
+    width: 60px;
+    height: 60px;
     background-size: contain;
     background-repeat: no-repeat;
-    background-position: center;
-    color: transparent; /* Esconde o texto */
+    text-indent: -9999px; /* Esconde o texto */
+}
+
+/* Especificando a imagem para cada valor */
+.bu-image[data-bu="Finclass"] {
+    background-image: url("https://www.grupo-primo.com/images/Frame-30.png");
+}
+
+.bu-image[data-bu="Grão"] {
+    background-image: url("https://www.grupo-primo.com/images/Frame-31.png");
+}
+
+.bu-image[data-bu="Portfel"] {
+    background-image: url("https://www.grupo-primo.com/images/Frame-32.png");
+}
+
+.bu-image[data-bu="TopInvest"] {
+    background-image: url("https://www.grupo-primo.com/images/Frame-29.png");
 }
