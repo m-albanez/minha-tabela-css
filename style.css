@@ -65,14 +65,13 @@ td.highlight:hover {
     background-color: #1d1d1d; /* Destaque suave */
 }
 
-td .bu-image {
+table tbody td .bu-image {
     display: flex !important;
     justify-content: center !important;
     align-items: center !important;
-    width: 100% !important;
 }
 
-td .bu-image img {
+table tbody td .bu-image img {
     max-width: 60px !important;
     height: auto !important;
     display: block !important;
