@@ -2,95 +2,43 @@
 table {
     width: 100%;
     border-radius: 8px; /* Bordas arredondadas */
-    border-collapse: separate; /* Separando as bordas das células */
-    border-spacing: 0;
-    background-color: #1d1d1d; /* Fundo branco */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra suave */
+    border-collapse: collapse; /* Unindo as bordas das células */
+    background-color: #ffffff; /* Fundo branco */
     font-family: 'Roboto', sans-serif;
+}
+
+/* Remover linhas e bordas */
+th, td {
+    padding: 12px 16px;
+    text-align: center;
+    font-size: 14px;
+    border: none;
 }
 
 /* Estilo do cabeçalho da tabela */
 th {
-    padding: 16px 20px;
-    text-align: left;
-    background-color: #1d1d1d; /* Fundo preto */
-    color: #1d1d1d; 
+    background-color: #f4f4f4; /* Fundo cinza claro */
+    color: #333; /* Texto escuro */
     font-size: 16px;
-    font-weight: 600;
-    text-transform: capitalize; /* Primeira letra de cada palavra em maiúscula */
-    letter-spacing: 1px;
-    background-image: url("https://www.grupo-primo.com/images/Frame-30.png");
-}
-
-/* Ocultar o tooltip ao passar o mouse sobre os cabeçalhos da tabela */
-th:hover::after {
-    content: none !important;
-}
-
-/* Estilo das células da tabela */
-th, td {
-    padding: 14px 20px;
-    text-align: left;
-    font-size: 14px;
-}
-
-/* Estilo das linhas de dados */
-td {
-    background-color: #1d1d1d; /* Fundo claro para as células */
-    color: #ffffff; /* Texto escuro */
-    border-bottom: none; /* Linha sutil entre as células */
-    transition: background-color 0.3s ease; /* Transição suave */
-}
-
-/* Estilo para o rodapé da tabela */
-tfoot td {
     font-weight: bold;
-    background-color: #1d1d1d;
-    border-top: 2px solid #e0e0e0;
+    text-transform: capitalize;
 }
 
-/* Remover as bordas verticais (borda esquerda e direita) */
-th, td {
-    border-left: none;
-    border-right: none;
+/* Estilo das células de dados */
+td {
+    background-color: #ffffff; /* Fundo branco */
+    color: #333; /* Texto escuro */
+    transition: background-color 0.3s ease;
 }
 
-/* Remover a borda esquerda da primeira célula */
-th:first-child, td:first-child {
-    border-left: none;
-}
+/* Gradiente de cores para simular um gráfico de cohort */
+td[data-value='100'] { background-color: #004c6d; color: #ffffff; }
+td[data-value='80'] { background-color: #2c7da0; color: #ffffff; }
+td[data-value='60'] { background-color: #76b0c4; color: #ffffff; }
+td[data-value='40'] { background-color: #b5d6e6; color: #333; }
+td[data-value='20'] { background-color: #eaf4f8; color: #333; }
 
-/* Estilo de destaque nas células ao passar o mouse */
-td.highlight:hover {
-    background-color: #1d1d1d; /* Destaque suave */
-}
-
-.bu-image {
-    display: inline-block;
-    width: 60px;
-    height: 60px;
-    background-size: contain;
-    background-repeat: no-repeat;
-    text-indent: -9999px; /* Esconde o texto */
-}
-
-/* Especificando a imagem para cada valor */
-.bu-image[data-bu="Finclass"] {
-    background-image: url("https://www.grupo-primo.com/images/Frame-30.png");
-}
-
-.bu-image[data-bu="Grão"] {
-    background-image: url("https://www.grupo-primo.com/images/Frame-31.png");
-}
-
-.bu-image[data-bu="Portfel"] {
-    background-image: url("https://www.grupo-primo.com/images/Frame-32.png");
-}
-
-.bu-image[data-bu="TopInvest"] {
-    background-image: url("https://www.grupo-primo.com/images/Frame-29.png");
-}
-
-.fin{
-    background-image: url("https://www.grupo-primo.com/images/Frame-30.png");
+/* Suavização ao passar o mouse */
+td:hover {
+    filter: brightness(90%);
 }
